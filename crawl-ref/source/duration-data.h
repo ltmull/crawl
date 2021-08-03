@@ -564,6 +564,11 @@ static const duration_def duration_data[] =
       "Your duel has come to an end.", D_EXPIRES,
       {{ "", okawaru_end_duel },
       { "Okawaru bids you farewell from the Arena.", 1 }}, 6},
+    { DUR_RISING_FLAME,
+      LIGHTBLUE, "Rise",
+      "rising", "rise",
+      "You are rising toward the ceiling.", D_NO_FLAGS,
+      {{ "", rise_through_ceiling }}},
 
     // The following are visible in wizmode only, or are handled
     // specially in the status lights and/or the % or @ screens.
