@@ -1284,6 +1284,9 @@ int player_res_fire(bool calc_unid, bool temp, bool items)
         rf += get_form()->res_fire();
     }
 
+    if (have_passive(passive_t::resist_fire))
+        ++rf;
+
     if (rf > 3)
         rf = 3;
     if (temp && you.duration[DUR_FIRE_VULN])
